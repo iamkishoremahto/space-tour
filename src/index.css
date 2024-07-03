@@ -4,3 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.planetNavUnder{
+    @apply relative after:content-[''] after:h-[2px] after:w-0 hover:after:w-full after:bg-white after:absolute after:bottom-0 after:left-0 
+    after:transition after:ease-in-out after:delay-100 after:duration-150
+}
+.swiper-pagination{
+    @apply  !top-[250px] lg:!top-[600px] !z-50    flex flex-row  max-h-[50px] items-center justify-center lg:justify-start;
+    
+}
+
+
+
+.swiper-pagination-bullet{
+    min-height: 20px;
+    min-width: 20px;
+      background-color: gray !important; 
+}
+
+.swiper-pagination-bullet-active {
+    min-height: 20px;
+    min-width: 20px;
+      background-color: white !important;
+  
+       
+  }

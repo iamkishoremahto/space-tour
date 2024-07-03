@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider,Navigate } from "react-router-dom";
 import Layout from './Layout';
-import {Home, Technology,Destination,Crew,ShowPlanet} from './Components'
+import {Home, Technology,Destination,Crew,ShowPlanet,ShowCrew,ShowTech} from './Components'
 
 
 const router = createBrowserRouter([
@@ -21,8 +21,12 @@ const router = createBrowserRouter([
         path: 'destination/',
         children:[
           {
+            index: true,
+            element: <Navigate to="moon" replace />,
+          },
+          {
             element: <ShowPlanet/>,
-            path: 'planet/',
+            path: ':planet/',
 
           }
         ]
@@ -30,10 +34,18 @@ const router = createBrowserRouter([
       {
         element:<Crew />,
         path:'crew/',
+        children:[{
+          path: '',
+          element: <ShowCrew/>,
+        }]
       },
       {
         element:<Technology />,
         path: 'technology/',
+        children:[{
+          element: <ShowTech/>,
+          path: '',
+        }]
       }
     ]
   }

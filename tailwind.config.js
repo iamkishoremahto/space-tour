@@ -18,11 +18,21 @@ export default {
       'technology-desktop':"url('/assets/technology/background-technology-desktop.jpg')",
       'technology-mobile':"url('/assets/technology/background-technology-mobile.jpg')",
       'technology-tablet':"url('/assets/technology/background-technology-tablet.jpg')",
+      'technology-tablet-vehicle-portrait':"url('/assets/technology/image-launch-vehicle-portrait.jpg')",
+      'technology-tablet-vehicle-landscape':"url('/assets/technology/image-launch-vehicle-landscape.jpg')",
+      'technology-tablet-capsule-landscape':"url('/assets/technology/image-space-capsule-landscape.jpg')",
+      'technology-tablet-capsule-portrait':"url('/assets/technology/image-space-capsule-portrait.jpg')",
+      'technology-tablet-spaceport-portrait':"url('/assets/technology/image-spaceport-portrait.jpg')",
+      'technology-tablet-spaceport-landscape':"url('/assets/technology/image-spaceport-landscape.jpg')",
+      
     },
     fontFamily: {
       "Barlow":["Barlow Condensed","sans-serif"]
     },
     extend: {},
+    animation: {
+      'spin-slow': 'spin 100s linear infinite',
+    }
   },
   plugins: [],
 }

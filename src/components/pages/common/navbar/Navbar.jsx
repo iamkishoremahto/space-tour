@@ -12,7 +12,7 @@ export default function Navbar() {
 
     return (
         <>
-            <div className=" min-h-[100px] flex pl-11 relative">
+            <div className=" min-h-[100px] flex pl-11 relative z-50">
                 <div className=" flex justify-between -red-600 -2 min-w-full ">
                     <div className="logo  flex  items-center max-w-[200px] ">
                         <img className=" max-h-[50px]" src="/assets/shared/logo.svg" alt="logo" />
@@ -41,10 +41,10 @@ export default function Navbar() {
                             <img className="w-[35px]" src="/assets/shared/icon-close.svg" alt="close" />
                         </button>
                     </div>
-                    <div className="menu border h-[600px] py-10">
-                        <ul className=" border justify-start mt-[100px]">
-                        <LinkItem number='00' title='Home' link='/' />
-                                <LinkItem number='01' title='Destination' link='/destination' />
+                    <div className="menu  h-[600px] py-10">
+                        <ul className="  justify-start mt-[100px]">
+                                <LinkItem number='00' title='Home' link='/' />
+                                <LinkItem number='01' title='Destination' link='/destination/moon' />
                                 <LinkItem number='02' title='Crew' link='/crew' />
                                 <LinkItem number='03' title='Technology' link='/technology' />
                         </ul>

@@ -14,8 +14,8 @@ export default function Destination(){
             <Container>
 
             <div>
-                <div>
-                    <p className='text-white text-[35px] flex items-center gap-5 justify-start'><span className=' text-gray-400 font-semibold'>01</span><span className=' uppercase'>pic your destination</span></p>
+                <div className='mt-[180px] lg:mt-[50px]'>
+                    <p className='text-white text-[35px] flex items-center gap-5 justify-center lg:justify-start'><span className=' text-gray-400 font-semibold'>01</span><span className=' uppercase'>pic your destination</span></p>
                    <Outlet />
                 </div>
             </div>
